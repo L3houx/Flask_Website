@@ -1,0 +1,123 @@
+html{
+  background-color: #1c3356;
+}
+
+
+#body{
+  background-color: #1c3356;
+  max-width: 100%;
+}
+
+.navBar{
+  background-color: gray;
+  max-height: 3em;
+  min-height: 3em;
+  max-width: 100%;
+}
+
+.footerBar{
+  background-color: #1c3356;
+  max-height: 3em;
+  min-height: 3em;
+  max-width: 100%;
+  margin-bottom: 2em;
+}
+
+#footerLogo{
+  color: gray;
+  margin-left: 2em;
+  margin-right:3em;
+  font-size: 2.4em;
+  font-family: "Allerta Stencil";
+}
+
+.footerLinks{
+  color: gray;
+  font-size: 1.2em;
+  margin-left: 6em;
+}
+
+a{
+  color: #1c3356;
+  margin-right:4em;
+}
+
+.menuBar{
+  margin-left:8em;
+}
+
+#home{
+  color: #1c3356;
+  margin-left: 1.8em;
+  margin-right:3em;
+  font-size: 2.4em;
+  font-family: "Allerta Stencil";
+}
+
+.menu{
+  color: #1c3356;
+  font-size: 1.2em;
+  margin-left: 7.2em;
+}
+
+.slideImages1{
+  display: block;
+  margin-top: 2em;
+  margin-left: 24em;
+  margin-right: 24em;
+  max-width: 43.5em;
+}
+
+.slideImages2{
+  display: block;
+  margin-top: 2em;
+  margin-left: 24em;
+  margin-right: 24em;
+  max-width: 78.7em;
+}
+
+.slideImages3{
+  display: block;
+  margin-top: 2em;
+  margin-left: 24em;
+  margin-right: 24em;
+  max-width: 77em;
+}
+
+.slides{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgSlide {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w3-tag, .fa {
+  cursor:pointer
+}
+
+.w3-tag {
+  height:15px;
+  width:15px;
+  padding:0;
+  margin-top:6px
+}
+
+#presentationHeader{
+  margin-top: 1em;
+  text-align: center;
+  color:White;
+}
+
+#presentationTxt{
+  margin-top: 1em;
+  margin-left: 10em;
+  margin-right: 10em;
+  color:White;
+  text-align: justify;
+   text-justify: inter-word;
+}

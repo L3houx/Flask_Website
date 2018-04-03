@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>Mr_L3X</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='CSS/Site.css') }}>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Allerta+Stencil" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+  <nav class="navBar navbar-fixed-top">
+    <table class="menuBar">
+      <tr>
+        <td><a id="home"  href="/" style="text-decoration: none;">Mr_L3X<i class="fa fa-lock"></i></a></td>
+        <td><a class="menu"  href="about" style="text-decoration: none;">Bio</a></td>
+        <td><a class="menu"  href="projects" style="text-decoration: none;">Projects</a></td>
+        <td><a class="menu"  href="events" style="text-decoration: none;">Events</a></td>
+        <td><a class="menu"  href="experiences" style="text-decoration: none;">Experiences</a></td>
+      <tr>
+    </table>
+  </nav>
+  <br>
+  <br>
+<h1 id="presentationTxt">
+<p>
+Qu'est-ce que le Lorem Ipsum?
+
+Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+Pourquoi l'utiliser?
+
+On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
+</p>
+   {% block body %}{% endblock %}
+
+
+   <br>
+   <br>
+   <hr size=”10″ />
+   <nav class="footerBar navbar-bottom">
+     <table class="menuBar">
+       <tr>
+         <td><a id="footerLogo"  href="/" style="text-decoration: none;">Mr_L3X<i class="fa fa-lock"></i></a></td>
+         <td>
+           <a class="footerLinks"  href="about" style="text-decoration: none;">
+             <img class="imgSlide" src="{{ url_for('static', filename='Images/GitHub.png') }}" height="45em">
+           </a>
+         </td>
+         <td>
+           <a class="footerLinks"  href="https://www.linkedin.com/in/f%C3%A9lix-lehoux-78b172161/" style="text-decoration: none;">
+             <img class="imgSlide" src="{{ url_for('static', filename='Images/Linkedin.png') }}" height="45em">
+           </a>
+         </td>
+         <td>
+           <a class="footerLinks"  href="https://www.facebook.com/felix.lehoux" style="text-decoration: none;">
+             <img class="imgSlide" src="{{ url_for('static', filename='Images/Facebook.png') }}" height="45em">
+           </a>
+         </td>
+         <td>
+           <a class="footerLinks"  href="experiences" style="text-decoration: none;">
+             <img class="imgSlide" src="{{ url_for('static', filename='Images/Linkedin.png') }}" height="45em">
+           </a>
+         </td>
+       <tr>
+     </table>
+   </nav>
+</body>
+</html>
