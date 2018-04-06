@@ -2,7 +2,6 @@ html{
   background-color: #1c3356;
 }
 
-
 #body{
   background-color: #1c3356;
   max-width: 100%;
@@ -22,10 +21,16 @@ html{
   max-width: 100%;
   margin-bottom: 2em;
 }
+#tdfooterLogo{
+  width: 200em;
+}
+
+.tdfooter{
+  max-width:45em;
+}
 
 #footerLogo{
   color: gray;
-  margin-left: 2em;
   margin-right:3em;
   font-size: 2.4em;
   font-family: "Allerta Stencil";
@@ -34,7 +39,7 @@ html{
 .footerLinks{
   color: gray;
   font-size: 1.2em;
-  margin-left: 6em;
+  margin-left: 1em;
 }
 
 a{
