@@ -1,7 +1,7 @@
 <html>
 <head>
-  <title>Mr_L3X</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <title>L3houx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='CSS/Site.css') }}>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -11,19 +11,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Allerta+Stencil" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body id="body">
-  <nav class="navBar navbar-fixed-top">
-    <table class="menuBar">
-      <tr>
-        <td><a id="home"  href="/" style="text-decoration: none;">Mr_L3X<i class="fa fa-lock"></i></a></td>
-        <td><a class="menu"  href="about" style="text-decoration: none;">Bio</a></td>
-        <td><a class="menu"  href="projects" style="text-decoration: none;">Projects</a></td>
-        <td><a class="menu"  href="events" style="text-decoration: none;">Events</a></td>
-        <td><a class="menu"  href="experiences" style="text-decoration: none;">Experiences</a></td>
-      <tr>
-    </table>
+  <nav class="navBar navbar-fixed-top"
+    <div id="menuBar">
+      <a id="menuLogo"  href="/" style="text-decoration: none;">L3houx<i class="fa fa-lock"></i></a>
+      <a class="menu"  href="about" style="text-decoration: none;">Bio</a>
+      <a class="menu"  href="projects" style="text-decoration: none;">Projects</a>
+      <a class="menu"  href="events" style="text-decoration: none;">Events</a>
+      <a class="menu"  href="experiences" style="text-decoration: none;">Experiences</a>
+    </div>
   </nav>
   <br>
   <br>
@@ -38,35 +38,32 @@ On sait depuis longtemps que travailler avec du texte lisible et contenant du se
 </p>
    {% block body %}{% endblock %}
 
-
-   <br>
-   <br>
-   <hr size=”10″ />
+   <hr/>
    <nav class="footerBar navbar-bottom">
-     <table class="menuBar">
+     <table>
        <tr>
          <td id="tdfooterLogo">
-           <a id="footerLogo"  href="/" style="text-decoration: none;">Mr_L3X<i class="fa fa-lock"></i>
+           <a id="footerLogo"  href="/" style="text-decoration: none;">L3houx<i class="fa fa-lock"></i>
            </a>
          </td>
          <td class="tdfooter">
-           <a class="footerLinks"  href="https://github.com/MrL3X" style="text-decoration: none; width:35em;">
-             <img class="imgSlide" src="{{ url_for('static', filename='Images/GitHub.jpg') }}" height="35em">
+           <a class="footerLinks"  href="https://github.com/L3houx" style="text-decoration: none;">
+             <i class="fa fa-github"></i>
            </a>
-         </td>
+         </td>d
          <td  class="tdfooter">
-           <a class="footerLinks"  href="https://www.linkedin.com/in/f%C3%A9lix-lehoux-78b172161/" style="text-decoration: none; width:35em;">
-             <img class="imgSlide" src="{{ url_for('static', filename='Images/Linkedin.jpg') }}" height="35em">
+           <a class="footerLinks"  href="https://www.linkedin.com/in/f%C3%A9lix-lehoux-78b172161/" style="text-decoration: none;">
+             <i class="fa fa-linkedin"></i>
            </a>
          </td>
          <td class="tdfooter">
-           <a class="footerLinks"  href="https://www.facebook.com/felix.lehoux" style="text-decoration: none; width:35em;">
-             <img class="imgSlide" src="{{ url_for('static', filename='Images/Facebook.jpg') }}" height="35em">
+           <a class="footerLinks"  href="https://www.facebook.com/felix.lehoux" style="text-decoration: none;">
+             <i class="fa fa-facebook"></i>
            </a>
          </td>
          <td class="tdfooter">
-           <a class="footerLinks"  href="https://twitter.com/Mr__L3X" style="text-decoration: none; width:45em;">
-             <img class="imgSlide" src="{{ url_for('static', filename='Images/twitter.jpg') }}" height="45em">
+           <a class="footerLinks"  href="https://twitter.com/Mr__L3X" style="text-decoration: none;">
+             <i class="fa fa-twitter"></i>
            </a>
          </td>
        <tr>

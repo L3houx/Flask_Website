@@ -14,6 +14,10 @@ html{
   max-width: 100%;
 }
 
+#menuBar{
+  display: flex;
+}
+
 .footerBar{
   background-color: #1c3356;
   max-height: 3em;
@@ -47,11 +51,8 @@ a{
   margin-right:4em;
 }
 
-.menuBar{
-  margin-left:8em;
-}
 
-#home{
+#menuLogo{
   color: #1c3356;
   margin-left: 1.8em;
   margin-right:3em;
