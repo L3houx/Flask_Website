@@ -1,69 +1,99 @@
-html{
-  background-color: #1c3356;
-}
-
 #body{
   background-color: #1c3356;
   max-width: 100%;
 }
 
-.navBar{
-  background-color: gray;
-  max-height: 3em;
-  min-height: 3em;
-  max-width: 100%;
-}
-
 #menuBar{
-  display: flex;
-}
-
-.footerBar{
-  background-color: #1c3356;
-  max-height: 3em;
-  min-height: 3em;
+  display: inline-block;
+  background-color: gray;
+  min-height: 5%;
+  max-height: 15%;
+  width: 100%;
   max-width: 100%;
-  margin-bottom: 2em;
 }
-#tdfooterLogo{
-  width: 200em;
-}
-
-.tdfooter{
-  max-width:45em;
-}
-
-#footerLogo{
-  color: gray;
-  margin-right:3em;
-  font-size: 2.4em;
-  font-family: "Allerta Stencil";
-}
-
-.footerLinks{
-  color: gray;
-  font-size: 1.2em;
-  margin-left: 1em;
-}
-
-a{
-  color: #1c3356;
-  margin-right:4em;
-}
-
 
 #menuLogo{
   color: #1c3356;
-  margin-left: 1.8em;
-  margin-right:3em;
-  font-size: 2.4em;
+  margin-left: 3.7%;
+  margin-right:4%;
+  font-size: 2vw;
   font-family: "Allerta Stencil";
+  text-align: center;
+}
+
+#menuLogo:hover{
+  color: #0056b3;
 }
 
 .menu{
   color: #1c3356;
-  font-size: 1.2em;
-  margin-left: 7.2em;
+  font-size: 1.2vw;
+  text-align: center;
+  display: inline-block;
+  font-family: "Allerta Stencil";
+  width: auto;
+  margin-left: 1.9%;
+  margin-right: 12.39%;
+}
+
+#presentationHeader{
+  text-align: center;
+  color:White;
+}
+
+#text{
+  width: 62%;
+  max-width: 62%;
+  vertical-align: middle;
+  margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#presentationTxt{
+  color:White;
+  text-align: justify;
+  justify-content: center;
+}
+
+#hr{
+	border: 1px white inset;
+}
+
+#footerBar{
+  background-color: #1c3356;
+  min-height: 5%;
+  max-height: 15%;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1%;
+}
+
+#footerLogo{
+  color: gray;
+  margin-right:67%;
+  margin-left: 3.7%;
+  font-size:2vw;
+  font-family: "Allerta Stencil";
+}
+
+#footerLogo:hover{
+  color: #0056b3;
+}
+
+.footerLinks{
+  color: gray;
+  font-size:2vw;
+  margin-left: 1em;
+  width: auto;
+}
+
+.img1{
+  height: auto;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .slideImages1{
@@ -74,6 +104,13 @@ a{
   max-width: 43.5em;
 }
 
+.img2{
+  height: auto;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .slideImages2{
   display: block;
   margin-top: 2em;
@@ -82,12 +119,19 @@ a{
   max-width: 78.7em;
 }
 
+.img3{
+  height: auto;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .slideImages3{
   display: block;
   margin-top: 2em;
   margin-left: 24em;
   margin-right: 24em;
-  max-width: 77em;
+  max-width: 60%;
 }
 
 .slides{
@@ -102,6 +146,10 @@ a{
   margin-right: auto;
 }
 
+.demodots{
+  border-radius: 100%;
+}
+
 .w3-tag, .fa {
   cursor:pointer
 }
@@ -111,19 +159,4 @@ a{
   width:15px;
   padding:0;
   margin-top:6px
-}
-
-#presentationHeader{
-  margin-top: 1em;
-  text-align: center;
-  color:White;
-}
-
-#presentationTxt{
-  margin-top: 1em;
-  margin-left: 10em;
-  margin-right: 10em;
-  color:White;
-  text-align: justify;
-   text-justify: inter-word;
 }
