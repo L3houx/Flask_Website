@@ -10,9 +10,9 @@ app.config['SECRET_KEY'] = 'ThisIsATest'
 def index():
     return render_template('index.html', title='Home')
 
-@app.route('/about')
+@app.route('/')
 def about():
-    return render_template('aboutme.html', title='Aboute Me')
+    return render_template('index.html', title='Aboute Me')
 
 
 @app.route('/projects')

@@ -19,46 +19,39 @@
   <nav class="navigationBar navbar-fixed-top"
     <div id="menuBar">
       <a id="menuLogo"  href="/" style="text-decoration: none;">L3houx <i class="fa fa-lock"> </i></a>
-      <a class="menu"  href="about" style="text-decoration: none;">Bio</a>
+      <a class="menu"  href="/" style="text-decoration: none;">Bio</a>
       <a class="menu"  href="projects" style="text-decoration: none;">Projects</a>
       <a class="menu"  href="events" style="text-decoration: none;">Events</a>
       <a class="menu"  href="experiences" style="text-decoration: none;">Experiences</a>
     </div>
   </nav>
-  <div id="text">
-    <p id="presentationTxt">
-      Qu'est-ce que le Lorem Ipsum?
+  <div id="divContent">
 
-      Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-      Pourquoi l'utiliser?
+  {% block body %}{% endblock %}
 
-      On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
-    </p>
   </div>
-     {% block body %}{% endblock %}
-
+  <nav class="navbar-bottom">
    <hr id="hr">
-   <nav class="navbar-bottom">
-     <div id="footerBar">
-        <a id="footerLogo"  href="/" style="text-decoration: none;">L3houx
-          <i class="fa fa-lock"></i>
-        </a>
+   <div id="footerBar">
+      <a id="footerLogo"  href="/" style="text-decoration: none;">L3houx
+        <i class="fa fa-lock"></i>
+      </a>
 
-        <a class="footerLinks"  href="https://github.com/L3houx" style="text-decoration: none;">
-          <i class="fa fa-github"></i>
-        </a>
+      <a class="footerLinks" target="_blank" href="https://github.com/L3houx" style="text-decoration: none;">
+        <i class="fa fa-github"></i>
+      </a>
 
-        <a class="footerLinks"  href="https://www.linkedin.com/in/f%C3%A9lix-lehoux-78b172161/" style="text-decoration: none;">
-          <i class="fa fa-linkedin"></i>
-        </a>
+      <a class="footerLinks" target="_blank" href="https://www.linkedin.com/in/f%C3%A9lix-lehoux-78b172161/" style="text-decoration: none;">
+        <i class="fa fa-linkedin"></i>
+      </a>
 
-        <a class="footerLinks"  href="https://www.facebook.com/felix.lehoux" style="text-decoration: none;">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a class="footerLinks"  href="https://twitter.com/Mr__L3X" style="text-decoration: none;">
-          <i class="fa fa-twitter"></i>
-        </a>
-      </div>
-   </nav>
+      <a class="footerLinks" target="_blank" href="https://www.facebook.com/felix.lehoux" style="text-decoration: none;">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a class="footerLinks" target="_blank" href="https://twitter.com/L3houx" style="text-decoration: none;">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+  </nav>
 </body>
 </html>

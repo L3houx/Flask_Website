@@ -3,6 +3,10 @@
   max-width: 100%;
 }
 
+#divContent{
+  min-height: 76vh;
+}
+
 #menuBar{
   display: inline-block;
   background-color: gray;
@@ -37,11 +41,13 @@
 }
 
 #presentationHeader{
+  margin-top: 10vh;
   text-align: center;
   color:White;
+  font-family: "Allerta Stencil";
 }
 
-#text{
+#divText{
   width: 62%;
   max-width: 62%;
   vertical-align: middle;
@@ -49,12 +55,34 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-#presentationTxt{
-  color:White;
+  color: white;
   text-align: justify;
   justify-content: center;
+}
+
+#divList{
+    width: 62%;
+    max-width: 62%;
+    vertical-align: middle;
+    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: justify;
+    justify-content: center;
+    font-size: 2vw;
+}
+li{
+  margin-top: 3%;
+  font-family: "Allerta Stencil";
+}
+
+.listLinks{
+  color: white;
+  font-size:2vw;
+  margin-left: 1em;
+  width: auto;
 }
 
 #hr{
@@ -62,7 +90,6 @@
 }
 
 #footerBar{
-  background-color: #1c3356;
   min-height: 5%;
   max-height: 15%;
   width: 100%;
