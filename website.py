@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from random import randint
-from forms import LoginForm
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'My website'
