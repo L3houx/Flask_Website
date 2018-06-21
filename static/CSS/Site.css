@@ -136,29 +136,22 @@ li{
   width: auto;
 }
 
-.img1{
+.imgs{
   height: auto;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
 }
 
-.slideImages1{
+.meImage{
   display: block;
   margin-top: 2em;
   margin-left: 24em;
   margin-right: 24em;
-  max-width: 43.5em;
+  max-width: 43.3em;
 }
 
-.img2{
-  height: auto;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.slideImages2{
+.hackfestImage{
   display: block;
   margin-top: 2em;
   margin-left: 24em;
@@ -166,19 +159,28 @@ li{
   max-width: 78.7em;
 }
 
-.img3{
-  height: auto;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.slideImages3{
+.logoImage{
   display: block;
   margin-top: 2em;
   margin-left: 24em;
   margin-right: 24em;
-  max-width: 60%;
+  max-width: 76.9em;
+}
+
+.nsec1Image{
+  display: block;
+  margin-top: 2em;
+  margin-left: 24em;
+  margin-right: 24em;
+  max-width: 82em;
+}
+
+.nsec2Image{
+  display: block;
+  margin-top: 2em;
+  margin-left: 24em;
+  margin-right: 24em;
+  max-width: 64.9em;
 }
 
 .slides{

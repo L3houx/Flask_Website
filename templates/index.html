@@ -8,21 +8,36 @@
 </div>
 
 <!-- I used the template of W3School: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_marketing&stacked=h -->
-<div class="slides slideImages1">
+<div class="slides meImage">
    <div class="w3-display-container mySlides">
-     <img class="imgSlide img1" src="{{ url_for('static', filename='Images/me.jpg') }}">
+     <img class="imgSlide imgs" src="{{ url_for('static', filename='Images/me.jpg') }}">
      <div class="w3-display-topleft w3-container w3-padding-32">
        <span class="w3-white w3-padding-large w3-animate-bottom">Me</span>
      </div>
    </div>
+
    <div class="w3-display-container mySlides">
-     <img class="imgSlide img2" src="{{ url_for('static', filename='Images/hackfest.jpg') }}">
+    <img class="imgSlide imgs" src="{{ url_for('static', filename='Images/nsec.jpg') }}">
+    <div class="w3-display-topleft w3-container w3-padding-32">
+      <span class="w3-white w3-padding-large w3-animate-bottom">3rd place of Golden Tickets at NorthSec </span>
+    </div>
+  </div>
+
+  <div class="w3-display-container mySlides">
+    <img class="imgSlide imgs" src="{{ url_for('static', filename='Images/hackfest.jpg') }}">
+    <div class="w3-display-topleft w3-container w3-padding-32">
+      <span class="w3-white w3-padding-large w3-animate-bottom">Me in an Hackfest conference</span>
+    </div>
+  </div>
+
+   <div class="w3-display-container mySlides">
+     <img class="imgSlide imgs" src="{{ url_for('static', filename='Images/nsec2.jpg') }}">
      <div class="w3-display-topleft w3-container w3-padding-32">
-       <span class="w3-white w3-padding-large w3-animate-bottom">Me in an Hackfest conference</span>
+       <span class="w3-white w3-padding-large w3-animate-bottom">Working hard to solve NSec's challenges</span>
      </div>
    </div>
    <div class="w3-display-container mySlides">
-     <img class="imgSlide img3" src="{{ url_for('static', filename='Images/logo.jpg') }}">
+     <img class="imgSlide imgs" src="{{ url_for('static', filename='Images/logo.jpg') }}">
      <div class="w3-display-topleft w3-container w3-padding-32">
        <span class="w3-white w3-padding-large w3-animate-bottom">My Logo</span>
      </div>
@@ -35,6 +50,8 @@
        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+       <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+       <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
      </div>
    </div>
  </div>
@@ -51,59 +68,68 @@
  }
 
  //setInterval(autoAnim, 4000);
- setInterval(autoAnim, 40000000000);
+ setInterval(autoAnim, 4000);
 
  function autoAnim(){
-     if(cur == 4 ){
+     if(cur >= 6 ){
        cur = 1;
      }
      currentDiv(cur);
      cur++;
  }
 
- function showDivs(n) {
-   var i;
-   var x = document.getElementsByClassName("mySlides");
-   var dots = document.getElementsByClassName("demodots");
-   var slides = document.getElementsByClassName("slides");
+  function showDivs(n) {
+    cur = n;
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demodots");
+    var slides = document.getElementsByClassName("slides");
 
-   switch (n) {
-     case 1:
-      slides[0].className = "slides slideImages1";
-       break;
+    switch (n) {
+    case 1:
+      slides[0].className = "slides meImage";
+      break;
 
-     case 2:
-      slides[0].className = "slides slideImages2";
-       break;
+    case 2:
+      slides[0].className = "slides nsec1Image";
+      break;
 
-     case 3:
-      slides[0].className = "slides slideImages3";
-       break;
+    case 3:
+      slides[0].className = "slides hackfestImage";
+      break;
 
-     default:
-      slides[0].className = "slides slideImages1";
+    case 4:
+      slides[0].className = "slides nsec2Image";
+      break;
+    
+    case 5:
+      slides[0].className = "slides logoImage";
+      break;
+
+      default:
+      slides[0].className = "slides meImage";
       break;
     }
 
-   if (n > x.length) {
-     slideIndex = 1
-   }
+    if (n > x.length) {
+      slideIndex = 1
+    }
 
-   if (n < 1) {
-     slideIndex = x.length
-   }
+    if (n < 1) {
+      slideIndex = x.length
+    }
 
-   for (i = 0; i < x.length; i++) {
+    for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
-   }
+    }
 
-   for (i = 0; i < dots.length; i++) {
+    for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" w3-white", "");
-   }
+    }
 
-   x[slideIndex-1].style.display = "block";
-   dots[slideIndex-1].className += " w3-white";
- }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-white";
+  }
 
  </script>
 {% endblock %}
